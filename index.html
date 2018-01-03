@@ -1,12 +1,1416 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Beeharry's Mineral Water</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Mineral Water Template designed by ssuetian" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<!-- //js -->
+<!-- countdown -->
+<link rel="stylesheet" href="css/jquery.countdown.css" />
+<!-- //countdown -->
+<!-- cart -->
+<script src="js/simpleCart.min.js"></script>
+<!-- cart -->
+<!-- for bootstrap working -->
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!-- //for bootstrap working -->
+<link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smooth-scrolling -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<!-- end firebase -->
 </head>
-<body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<body id="myBody">
+<!-- header -->
+	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;</button>
+					<h4 class="modal-title" id="myModalLabel">
+						Don't Wait, Login now!</h4>
+				</div>
+				<div class="modal-body modal-body-sub">
+					<div class="row">
+						<div class="col-md-8 modal_body_left modal_body_left1" style="border-right: 1px dotted #C2C2C2;padding-right:3em;">
+							<div class="sap_tabs">
+								<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+									<ul>
+										<li class="resp-tab-item" aria-controls="tab_item-0"><span>Sign in</span></li>
+										<li class="resp-tab-item" aria-controls="tab_item-1"><span>Sign up</span></li>
+
+									</ul>
+									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+										<div class="facts">
+											<!-- firebase authentication -->
+											<div class="register">
+
+													<input id="loginEmail" name="Email" placeholder="Email" type="email" required="">
+													<input id="loginPassword" name="Password" placeholder="Password" type="password" required="">
+
+													<div class="sign-up">
+														<input id="loginBtn" type="submit" value="Sign in"/>
+													</div>
+
+											</div>
+											<!-- end firebase authentication -->
+
+										</div>
+									</div>
+
+									<div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
+										<div class="facts">
+											<div class="register">
+													<!-- <input id="signUpName" placeholder="Name" name="Email" type="email" required=""> -->
+													<input id="signUpEmail" placeholder="Email" name="Number" type="email" required="">
+													<input id="signUpPassword" placeholder="Password" name="Password" type="password" required="">
+													<div class="sign-up">
+														<input id="btnSignUp" type="submit" value="Create Account"/>
+													</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+							<script type="text/javascript">
+								$(document).ready(function () {
+									$('#horizontalTab').easyResponsiveTabs({
+										type: 'default', //Types: default, vertical, accordion
+										width: 'auto', //auto or any width like 600px
+										fit: true   // 100% fit in a container
+									});
+								});
+							</script>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('#myModal88').modal('show');
+	</script>
+<div class="header">
+				<div class="container">
+					<div id="w3l_login1" class="w3l_login">
+						<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+					</div>
+
+					<div id="w3l_login2" class="w3l_login">
+						<a href="#" data-toggle="modal" data-target="#myModal16"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+
+
+					</div>
+
+					<div class="w3l_logo">
+						<h1><a href="index.html"><img src="images/bee_logo.png" alt="" /></a></h1>
+
+					</div>
+
+					<div class="cart box_1">
+						<a href="checkout.html">
+							<div class="total">
+							<span></span> (<span id="cartQuantity">xx</span> items)
+							</div>
+							<img src="images/bag.png" alt="" />
+						</a>
+						<p><a id="cartPrice" href="checkout.html" class="simpleCart_empty">xxxx</a></p>
+						<div class="clearfix"> </div>
+					</div>
+
+
+					<div class="clearfix"> </div>
+				</div>
+</div>
+	<div class="navigation">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header nav_2">
+					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html" class="act">Home</a></li>
+						<!-- Mega Menu -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="col-sm-3">
+										<ul class="multi-column-dropdown">
+											<h6>500ml Bottle</h6>
+											<li><a href="#" data-toggle="modal" data-target="#myModal">Single<span>500ml</span></a></li>
+											<li><a href="#" data-toggle="modal" data-target="#myModal1">Pack of 24<span>500ml</span></a></li>
+										</ul>
+									</div>
+									<div class="col-sm-3">
+										<ul class="multi-column-dropdown">
+											<h6>1.5 Liter Bottle</h6>
+											<li><a href="#" data-toggle="modal" data-target="#myModal2">Single<span>1.5 Liter</span></a></li>
+											<li><a href="#" data-toggle="modal" data-target="#myModal3">Pack of 6<span>1.5 Liter</span></a></li>
+											<li><a href="#" data-toggle="modal" data-target="#myModal4">Pack of 30<span>1.5 Liter</span></a></li>
+										</ul>
+									</div>
+									<div class="col-sm-3">
+										<ul class="multi-column-dropdown">
+											<h6>6 Liter Bottle</h6>
+											<li><a href="#" data-toggle="modal" data-target="#myModal5">Single<span>6 Liter</span></a></li>
+											<li><a href="#" data-toggle="modal" data-target="#myModal6">Pack of 5<span>6 Liter</span></a></li>
+											<li><a href="#" data-toggle="modal" data-target="#myModal7">Pack of 10<span>6 Liter</span></a></li>
+
+
+										</ul>
+									</div>
+									<div class="col-sm-3">
+										<ul class="multi-column-dropdown">
+											<h6>19 Liter Can</h6>
+											<li><a href="#" data-toggle="modal" data-target="#myModal8">Single<span>19 Liter</span></a></li>
+											<li><a href="#" data-toggle="modal" data-target="#myModal9">Pack of 5<span>19 Liter</span></a></li>
+											<li><a href="#" data-toggle="modal" data-target="#myModal10">Pack of 10<span>19 Liter</span></a></li>
+
+										</ul>
+									</div>
+
+									<!-- <div class="col-sm-4">
+										<div class="w3ls_products_pos">
+											<h4>50%<i>Off/-</i></h4>
+											<img src="images/1.jpg" alt=" " class="img-responsive" />
+										</div>
+									</div> -->
+									<div class="clearfix"></div>
+								</div>
+							</ul>
+						</li>
+
+
+
+
+
+
+
+
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="mail.html">Mail Us</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+	<div class="banner" id="home1">
+		<div class="container">
+		</div>
+	</div>
+<!-- //banner -->
+
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="col-md-5 wthree_banner_bottom_left">
+				<div class="video-img">
+					<a class="play-icon popup-with-zoom-anim" href="#small-dialog">
+						<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
+					</a>
+				</div>
+				<!-- pop-up-box -->
+						<link href="css/popuo-box.css" rel="stylesheet" type="text/css" property="" media="all" />
+						<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<!--//pop-up-box -->
+					<div id="small-dialog" class="mfp-hide">
+						<iframe src="https://player.vimeo.com/video/235862978?title=0&byline=0&portrait=0"></iframe>
+					</div>
+					<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+
+						});
+					</script>
+			</div>
+
+
+
+
+			<div class="col-md-7 wthree_banner_bottom_right">
+				<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					<ul id="myTab" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home">500 ml</a></li>
+						<li role="presentation"><a href="#skirts" role="tab" id="skirts-tab" data-toggle="tab" aria-controls="skirts">1.5 Liter</a></li>
+						<li role="presentation"><a href="#watches" role="tab" id="watches-tab" data-toggle="tab" aria-controls="watches">6 Liter</a></li>
+						<li role="presentation"><a href="#sandals" role="tab" id="sandals-tab" data-toggle="tab" aria-controls="sandals">19 Liter Can</a></li>
+						<!-- <li role="presentation"><a href="#jewellery" role="tab" id="jewellery-tab" data-toggle="tab" aria-controls="jewellery">Jewellery</a></li> -->
+					</ul>
+
+					<div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+							<div class="agile_ecommerce_tabs">
+
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img id="product_imgUrl" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a id="productName" href="#">500ml Bottle Brr</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><i id="productPrice" class="item_price">Rs.30</i></p>
+										<p><a id="addToCart" class="item_add" href="#">Add to cart</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img id="product_imgUrl1" src="images/500_ml/500mlx24.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx24.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx24.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx24.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx24.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx24.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx24.jpg" alt=" " class="img-responsive" />
+										<img src="images/500_ml/500mlx24.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a id="productName1" href="single.html">500ml Single</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><i id="productPrice1" class="item_price">Rs.30</i></p>
+										<p><a id="addToCart1" class="item_add" href="#">Add to cart</a></p>
+									</div>
+								</div>
+
+
+								<div class="clearfix"> </div>
+
+							</div>
+						</div>
+
+						<div role="tabpanel" class="tab-pane fade" id="skirts" aria-labelledby="skirts-tab">
+
+							<div class="agile_ecommerce_tabs">
+
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img id="product_imgUrl2" src="images/1.5_liter/1.5L.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a id="productName2" href="single.html">500ml Single</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><i id="productPrice2" class="item_price">Rs.30</i></p>
+										<p><a id="addToCart2" class="item_add" href="#">Add to cart</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img id="product_imgUrl3" src="images/1.5_liter/15L6.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/15L6.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/15L6.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/15L6.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/15L6.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/15L6.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/15L6.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/15L6.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a id="productName3" href="single.html">500ml Single</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><i id="productPrice3" class="item_price">Rs.30</i></p>
+										<p><a id="addToCart3" class="item_add" href="#">Add to cart</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img id="product_imgUrl4" src="images/1.5_liter/1.5L24.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L24.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L24.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L24.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L24.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L24.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L24.jpg" alt=" " class="img-responsive" />
+										<img src="images/1.5_liter/1.5L24.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a id="productName4" href="single.html">500ml Single</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><i id="productPrice4" class="item_price">Rs.30</i></p>
+										<p><a id="addToCart4" class="item_add" href="#">Add to cart</a></p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+
+							</div>
+						</div>
+
+						<div role="tabpanel" class="tab-pane fade" id="watches" aria-labelledby="watches-tab">
+
+							<div class="agile_ecommerce_tabs">
+
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img id="product_imgUrl5" src="images/6_Liter/6Literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx1.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal5"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a id="productName5" href="single.html">500ml Single</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><i id="productPrice5" class="item_price">Rs.30</i></p>
+										<p><a id="addToCart5" class="item_add" href="#">Add to cart</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img id="product_imgUrl6" src="images/6_Liter/6Literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx5.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a id="productName6" href="single.html">500ml Single</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><i id="productPrice6" class="item_price">Rs.30</i></p>
+										<p><a id="addToCart6" class="item_add" href="#">Add to cart</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img id="product_imgUrl7" src="images/6_Liter/6Literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/6_Liter/6Literx10.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal7"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a id="productName7" href="single.html">500ml Single</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><i id="productPrice7" class="item_price">Rs.30</i></p>
+										<p><a id="addToCart7" class="item_add" href="#">Add to cart</a></p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+
+							</div>
+
+						</div>
+
+						<div role="tabpanel" class="tab-pane fade" id="sandals" aria-labelledby="sandals-tab">
+
+							<div class="agile_ecommerce_tabs">
+
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img id="product_imgUrl8" src="images/19_Liter/19literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx1.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx1.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a id="productName8" href="single.html">500ml Single</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><i id="productPrice8" class="item_price">Rs.30</i></p>
+										<p><a id="addToCart8" class="item_add" href="#">Add to cart</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img id="product_imgUrl9" src="images/19_Liter/19literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx5.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx5.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal9"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a id="productName9" href="single.html">500ml Single</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><i id="productPrice9" class="item_price">Rs.30</i></p>
+										<p><a id="addToCart9"  class="item_add" href="#">Add to cart</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img id="product_imgUrl10" src="images/19_Liter/19literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx10.jpg" alt=" " class="img-responsive" />
+										<img src="images/19_Liter/19literx10.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal10"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a id="productName10" href="single.html">500ml Single</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><i id="productPrice10" class="item_price">Rs.30</i></p>
+										<p><a id="addToCart10" class="item_add" href="#">Add to cart</a></p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+					<!--modal-video-->
+				<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<div class="col-md-5 modal_body_left">
+										<img id="Mproduct_imgUrl" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="col-md-7 modal_body_right">
+										<h4 id="MproductName">500ml Beharry's Mineral Water Bottle</h4>
+										<p id="MproductDes">Matching up with the exact requirements of customers, we are involved in presenting wide array of 500ML Mineral Water Bottle.</p>
+
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><i id="MproductPrice" class="item_price">Rs.30</i></p>
+											<!-- <p><a class="item_add" href="#">Add to cart</a></p> -->
+										</div>
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<div class="col-md-5 modal_body_left">
+										<img id="Mproduct_imgUrl1" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="col-md-7 modal_body_right">
+										<h4 id="MproductName1">500ml Beharry's Mineral Water Bottle</h4>
+										<p id="MproductDes1">Matching up with the exact requirements of customers, we are involved in presenting wide array of 500ML Mineral Water Bottle.</p>
+
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><i id="MproductPrice1" class="item_price">Rs.30</i></p>
+											<!-- <p><a class="item_add" href="#">Add to cart</a></p> -->
+										</div>
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<div class="col-md-5 modal_body_left">
+										<img id="Mproduct_imgUrl2" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="col-md-7 modal_body_right">
+										<h4 id="MproductName2">500ml Beharry's Mineral Water Bottle</h4>
+										<p id="MproductDes2">Matching up with the exact requirements of customers, we are involved in presenting wide array of 500ML Mineral Water Bottle.</p>
+
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><i id="MproductPrice2" class="item_price">Rs.30</i></p>
+											<!-- <p><a class="item_add" href="#">Add to cart</a></p> -->
+										</div>
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<div class="col-md-5 modal_body_left">
+										<img id="Mproduct_imgUrl3" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="col-md-7 modal_body_right">
+										<h4 id="MproductName3">500ml Beharry's Mineral Water Bottle</h4>
+										<p id="MproductDes3">Matching up with the exact requirements of customers, we are involved in presenting wide array of 500ML Mineral Water Bottle.</p>
+
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><i id="MproductPrice3" class="item_price">Rs.30</i></p>
+											<!-- <p><a class="item_add" href="#">Add to cart</a></p> -->
+										</div>
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<div class="col-md-5 modal_body_left">
+										<img id="Mproduct_imgUrl4" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="col-md-7 modal_body_right">
+										<h4 id="MproductName4">500ml Beharry's Mineral Water Bottle</h4>
+										<p id="MproductDes4">Matching up with the exact requirements of customers, we are involved in presenting wide array of 500ML Mineral Water Bottle.</p>
+
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><i id="MproductPrice4" class="item_price">Rs.30</i></p>
+											<!-- <p><a class="item_add" href="#">Add to cart</a></p> -->
+										</div>
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<div class="col-md-5 modal_body_left">
+										<img id="Mproduct_imgUrl5" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="col-md-7 modal_body_right">
+										<h4 id="MproductName5">500ml Beharry's Mineral Water Bottle</h4>
+										<p id="MproductDes5">Matching up with the exact requirements of customers, we are involved in presenting wide array of 500ML Mineral Water Bottle.</p>
+
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><i id="MproductPrice5" class="item_price">Rs.30</i></p>
+											<!-- <p><a class="item_add" href="#">Add to cart</a></p> -->
+										</div>
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<div class="col-md-5 modal_body_left">
+										<img id="Mproduct_imgUrl6" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="col-md-7 modal_body_right">
+										<h4 id="MproductName6">500ml Beharry's Mineral Water Bottle</h4>
+										<p id="MproductDes6">Matching up with the exact requirements of customers, we are involved in presenting wide array of 500ML Mineral Water Bottle.</p>
+
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><i id="MproductPrice6" class="item_price">Rs.30</i></p>
+											<!-- <p><a class="item_add" href="#">Add to cart</a></p> -->
+										</div>
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<div class="col-md-5 modal_body_left">
+										<img id="Mproduct_imgUrl7" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="col-md-7 modal_body_right">
+										<h4 id="MproductName7">500ml Beharry's Mineral Water Bottle</h4>
+										<p id="MproductDes7">Matching up with the exact requirements of customers, we are involved in presenting wide array of 500ML Mineral Water Bottle.</p>
+
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><i id="MproductPrice7" class="item_price">Rs.30</i></p>
+											<!-- <p><a class="item_add" href="#">Add to cart</a></p> -->
+										</div>
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<div class="col-md-5 modal_body_left">
+										<img id="Mproduct_imgUrl8" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="col-md-7 modal_body_right">
+										<h4 id="MproductName8">500ml Beharry's Mineral Water Bottle</h4>
+										<p id="MproductDes8">Matching up with the exact requirements of customers, we are involved in presenting wide array of 500ML Mineral Water Bottle.</p>
+
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><i id="MproductPrice8" class="item_price">Rs.30</i></p>
+											<!-- <p><a class="item_add" href="#">Add to cart</a></p> -->
+										</div>
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<div class="col-md-5 modal_body_left">
+										<img id="Mproduct_imgUrl9" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="col-md-7 modal_body_right">
+										<h4 id="MproductName9">500ml Beharry's Mineral Water Bottle</h4>
+										<p id="MproductDes9">Matching up with the exact requirements of customers, we are involved in presenting wide array of 500ML Mineral Water Bottle.</p>
+
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><i id="MproductPrice9" class="item_price">Rs.30</i></p>
+											<!-- <p><a class="item_add" href="#">Add to cart</a></p> -->
+										</div>
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<div class="col-md-5 modal_body_left">
+										<img id="Mproduct_imgUrl10" src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="col-md-7 modal_body_right">
+										<h4 id="MproductName10">500ml Beharry's Mineral Water Bottle</h4>
+										<p id="MproductDes10">Matching up with the exact requirements of customers, we are involved in presenting wide array of 500ML Mineral Water Bottle.</p>
+
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><i id="MproductPrice10"class="item_price">Rs.30</i></p>
+											<!-- <p><a class="item_add" href="#">Add to cart</a></p> -->
+										</div>
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+				<!-- products modal ended -->
+
+
+				<div class="modal video-modal fade" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<!-- <div class="col-md-5 modal_body_left">
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div> -->
+
+										<!-- <h4>500ml Beharry's Mineral Water Bottle</h4> -->
+										<p>This Number is already registered, try another number</p>
+										<!-- <div class="rating">
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="clearfix"> </div>
+										</div>
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><span>$320</span> <i class="item_price">$250</i></p>
+											<p><a class="item_add" href="#">Add to cart</a></p>
+										</div> -->
+										<!-- <h5>Color</h5>
+										<div class="color-quality">
+											<ul>
+												<li><a href="#"><span></span>Red</a></li>
+												<li><a href="#" class="brown"><span></span>Yellow</a></li>
+												<li><a href="#" class="purple"><span></span>Purple</a></li>
+												<li><a href="#" class="gray"><span></span>Violet</a></li>
+											</ul>
+										</div> -->
+
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<!-- <div class="col-md-5 modal_body_left">
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div> -->
+
+										<!-- <h4>500ml Beharry's Mineral Water Bottle</h4> -->
+										<p>Signed In successfully!!</p>
+										<!-- <div class="rating">
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="clearfix"> </div>
+										</div>
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><span>$320</span> <i class="item_price">$250</i></p>
+											<p><a class="item_add" href="#">Add to cart</a></p>
+										</div> -->
+										<!-- <h5>Color</h5>
+										<div class="color-quality">
+											<ul>
+												<li><a href="#"><span></span>Red</a></li>
+												<li><a href="#" class="brown"><span></span>Yellow</a></li>
+												<li><a href="#" class="purple"><span></span>Purple</a></li>
+												<li><a href="#" class="gray"><span></span>Violet</a></li>
+											</ul>
+										</div> -->
+
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<!-- <div class="col-md-5 modal_body_left">
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div> -->
+
+										<!-- <h4>500ml Beharry's Mineral Water Bottle</h4> -->
+										<p>Congratulations!!<br> Your Acoount has been created successfully!!</p>
+										<!-- <div class="rating">
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="clearfix"> </div>
+										</div>
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><span>$320</span> <i class="item_price">$250</i></p>
+											<p><a class="item_add" href="#">Add to cart</a></p>
+										</div> -->
+										<!-- <h5>Color</h5>
+										<div class="color-quality">
+											<ul>
+												<li><a href="#"><span></span>Red</a></li>
+												<li><a href="#" class="brown"><span></span>Yellow</a></li>
+												<li><a href="#" class="purple"><span></span>Purple</a></li>
+												<li><a href="#" class="gray"><span></span>Violet</a></li>
+											</ul>
+										</div> -->
+
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal video-modal fade" id="myModal13" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<!-- <div class="col-md-5 modal_body_left">
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div> -->
+
+										<!-- <h4>500ml Beharry's Mineral Water Bottle</h4> -->
+										<p>Signed In successfully!!</p>
+										<!-- <div class="rating">
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="clearfix"> </div>
+										</div>
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><span>$320</span> <i class="item_price">$250</i></p>
+											<p><a class="item_add" href="#">Add to cart</a></p>
+										</div> -->
+										<!-- <h5>Color</h5>
+										<div class="color-quality">
+											<ul>
+												<li><a href="#"><span></span>Red</a></li>
+												<li><a href="#" class="brown"><span></span>Yellow</a></li>
+												<li><a href="#" class="purple"><span></span>Purple</a></li>
+												<li><a href="#" class="gray"><span></span>Violet</a></li>
+											</ul>
+										</div> -->
+
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal video-modal fade" id="myModal14" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<!-- <div class="col-md-5 modal_body_left">
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div> -->
+
+										<!-- <h4>500ml Beharry's Mineral Water Bottle</h4> -->
+										<p id="Myerror"></p>
+										<!-- <div class="rating">
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="clearfix"> </div>
+										</div>
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><span>$320</span> <i class="item_price">$250</i></p>
+											<p><a class="item_add" href="#">Add to cart</a></p>
+										</div> -->
+										<!-- <h5>Color</h5>
+										<div class="color-quality">
+											<ul>
+												<li><a href="#"><span></span>Red</a></li>
+												<li><a href="#" class="brown"><span></span>Yellow</a></li>
+												<li><a href="#" class="purple"><span></span>Purple</a></li>
+												<li><a href="#" class="gray"><span></span>Violet</a></li>
+											</ul>
+										</div> -->
+
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal15" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<!-- <div class="col-md-5 modal_body_left">
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div> -->
+
+										<!-- <h4>500ml Beharry's Mineral Water Bottle</h4> -->
+										<p>Wrong password</p>
+										<!-- <div class="rating">
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="clearfix"> </div>
+										</div>
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><span>$320</span> <i class="item_price">$250</i></p>
+											<p><a class="item_add" href="#">Add to cart</a></p>
+										</div> -->
+										<!-- <h5>Color</h5>
+										<div class="color-quality">
+											<ul>
+												<li><a href="#"><span></span>Red</a></li>
+												<li><a href="#" class="brown"><span></span>Yellow</a></li>
+												<li><a href="#" class="purple"><span></span>Purple</a></li>
+												<li><a href="#" class="gray"><span></span>Violet</a></li>
+											</ul>
+										</div> -->
+
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal video-modal fade" id="myModal16" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<!-- <div class="col-md-5 modal_body_left">
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div> -->
+
+										<!-- <h4>500ml Beharry's Mineral Water Bottle</h4> -->
+
+
+												<!-- firebase authentication -->
+												<div class="register">
+													<div class="sign-up">
+														<h1>Notification:</h1>
+														<h5 id="user_notify">.......................................................................</h5>
+													</div>
+
+														<div class="sign-up">
+															<h1 id="emailShow" >xxxxxx</h1>
+															<input id="logOutBtn" type="submit" value="Sign Out"/>
+														</div>
+
+												</div>
+												<!-- end firebase authentication -->
+
+
+
+
+
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="modal video-modal fade" id="myModal17" tabindex="-1" role="dialog" aria-labelledby="myModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<section>
+								<div class="modal-body">
+									<!-- <div class="col-md-5 modal_body_left">
+										<img src="images/500_ml/500mlx1.jpg" alt=" " class="img-responsive" />
+									</div> -->
+
+										<!-- <h4>500ml Beharry's Mineral Water Bottle</h4> -->
+										<p>Item added to your Cart</p>
+										<!-- <div class="rating">
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star-.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="rating-left">
+												<img src="images/star.png" alt=" " class="img-responsive" />
+											</div>
+											<div class="clearfix"> </div>
+										</div>
+										<div class="modal_body_right_cart simpleCart_shelfItem">
+											<p><span>$320</span> <i class="item_price">$250</i></p>
+											<p><a class="item_add" href="#">Add to cart</a></p>
+										</div> -->
+										<!-- <h5>Color</h5>
+										<div class="color-quality">
+											<ul>
+												<li><a href="#"><span></span>Red</a></li>
+												<li><a href="#" class="brown"><span></span>Yellow</a></li>
+												<li><a href="#" class="purple"><span></span>Purple</a></li>
+												<li><a href="#" class="gray"><span></span>Violet</a></li>
+											</ul>
+										</div> -->
+
+									<div class="clearfix"> </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+
+
+
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+
+	<!-- newsletter -->
+		<div class="newsletter">
+			<div class="container">
+				<h3>We never know the worth of water till the well is dry....</h3>
+				<div class="col-md-6 w3agile_newsletter_left">
+
+					<!-- <p>Excepteur sint occaecat cupidatat non proident, sunt.</p> -->
+				</div>
+				<!-- <div class="col-md-6 w3agile_newsletter_right">
+					<form action="#" method="post">
+						<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input type="submit" value="">
+					</form>
+				</div> -->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	<!-- //newsletter -->
+
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="w3_footer_grids">
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Contact</h3>
+					<ul class="address">
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>B123 Block I, North Nazimabad
+							<span>Karachi, Pakistan</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>0333 2128478</li>
+					</ul>
+				</div>
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Information</h3>
+					<ul class="info">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+
+						<li><a href="#">FAQ's</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Category</h3>
+					<ul class="info">
+						<li><a href="#">500ml</a></li>
+						<li><a href="#">1.5 Liter</a></li>
+						<li><a href="#">6 Liter</a></li>
+						<li><a href="#">19 Liter</a></li>
+
+					</ul>
+				</div>
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Profile</h3>
+					<ul class="info">
+						<li><a href="#">My Cart</a></li>
+					</ul>
+					<h4>Follow Us</h4>
+					<div class="agileits_social_button">
+						<ul>
+							<li><a href="#" class="facebook"> </a></li>
+							<li><a href="#" class="google"> </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="footer-copy">
+			<div class="footer-copy1">
+				<div class="footer-copy-pos">
+					<a href="#home1" class="scroll"><img src="images/arrow.png" alt=" " class="img-responsive" /></a>
+				</div>
+			</div>
+			<div class="container">
+				<p>&copy; 2017 BEEHARRY'S MINERAL WATER. All rights reserved | Design by SSUETIAN BATCH CE-2014</p>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+
+<script src="app.js"></script>
+<!-- <script src="ProdRead.js"></script> -->
+
 
 </body>
 </html>
